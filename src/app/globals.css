@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme as default */
+    --background: 240 10% 3%;
+    --foreground: 210 30% 92%;
+
+    --card: 240 8% 6%;
+    --card-foreground: 210 30% 92%;
+
+    --popover: 240 8% 6%;
+    --popover-foreground: 210 30% 92%;
+
+    --primary: 263 70% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 240 6% 11%;
+    --secondary-foreground: 210 30% 85%;
+
+    --muted: 240 6% 11%;
+    --muted-foreground: 215 15% 52%;
+
+    --accent: 263 60% 72%;
+    --accent-foreground: 240 6% 6%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 6% 13%;
+    --input: 240 6% 13%;
+    --ring: 263 70% 58%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-syne), system-ui, sans-serif;
+    letter-spacing: -0.025em;
+  }
+  ::selection {
+    background-color: hsl(263 70% 58% / 0.3);
+    color: hsl(263 60% 92%);
+  }
+}
+
+@layer utilities {
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 to-purple-300 bg-clip-text text-transparent;
+  }
+
+  /* Glass card */
+  .glass-card {
+    background: hsl(240 8% 6% / 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(240 6% 13%);
+  }
+
+  /* Glow on hover */
+  .hover-glow:hover {
+    box-shadow: 0 0 24px hsl(263 70% 58% / 0.25);
+  }
+
+  /* Violet border glow */
+  .border-glow {
+    border-color: hsl(263 70% 58% / 0.35) !important;
+  }
+
+  /* Live indicator */
+  .live-dot {
+    @apply w-2 h-2 rounded-full bg-emerald-400;
+    box-shadow: 0 0 6px hsl(152 76% 60% / 0.8);
+    animation: live-pulse 2s ease-in-out infinite;
+  }
+
+  /* Grid background */
+  .bg-grid {
+    background-image: linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Hero glow blob */
+  .hero-glow {
+    background: radial-gradient(ellipse 60% 50% at 50% 0%, hsl(263 70% 58% / 0.15), transparent);
+  }
+}
+
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
+}
+
+@keyframes ring-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.profile-ring {
+  animation: ring-spin 8s linear infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--background)); }
+::-webkit-scrollbar-thumb {
+  background: hsl(263 70% 58% / 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: hsl(263 70% 58% / 0.7); }
