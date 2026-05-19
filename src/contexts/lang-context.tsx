@@ -13,6 +13,7 @@ interface LangContextValue {
 const translations: Record<Lang, Record<string, string>> = {
   en: {
     "nav.about": "About",
+    "nav.experience": "Experience",
     "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
@@ -43,6 +44,36 @@ const translations: Record<Lang, Record<string, string>> = {
     "about.edu.school": "Buriram Rajabhat University",
     "about.exp.role": "Software Engineer",
     "about.exp.company": "Memsg",
+
+    "exp.title": "Work Experience",
+    "exp.subtitle": "Career Journey",
+    "exp.current": "Present",
+
+    "exp.memsg.role": "Frontend Developer",
+    "exp.memsg.company": "Memsg · Buriram, Thailand · Full-time",
+    "exp.memsg.period": "May 2025 – Present",
+    "exp.memsg.location": "On-site · Buriram, Thailand",
+    "exp.memsg.d1": "Developed frontend UI components with Nuxt.js and TypeScript using Tailwind CSS for responsive, consistent design.",
+    "exp.memsg.d2": "Collaborated with designers using Figma to translate UI/UX designs into pixel-perfect components.",
+    "exp.memsg.d3": "Leveraged AI tools to accelerate development workflow and reduce delivery time.",
+    "exp.memsg.tech": "Nuxt.js · TypeScript · Tailwind CSS · REST API · Git",
+
+    "exp.mango.role": "Software Development Intern",
+    "exp.mango.company": "Mango Consultant Co., Ltd. · Bangkok, Thailand",
+    "exp.mango.period": "Nov 2024 – Feb 2025 · 4 months",
+    "exp.mango.location": "On-site · Bangkok, Thailand",
+    "exp.mango.d1": "Participated in development and maintenance of ERP system features for construction and real estate enterprise clients.",
+    "exp.mango.d2": "Practiced version control workflows with Git and GitHub — branching, pull requests, and code review.",
+    "exp.mango.d3": "Collaborated with senior developers on software architecture and ERP best practices in an agile environment.",
+
+    "exp.freelance.role": "Freelance Web Developer",
+    "exp.freelance.company": "WEB BY YOU · Self-employed",
+    "exp.freelance.period": "Jan 2024 – Present",
+    "exp.freelance.location": "Remote · Thailand",
+    "exp.freelance.d1": "Designed and delivered 7+ real-world client projects: e-commerce platforms, multi-language sites, and business landing pages.",
+    "exp.freelance.d2": "Built a full-stack tax-invoice and inventory management system for Thai SMEs with PDF generation.",
+    "exp.freelance.d3": "Deployed all projects via Vercel with custom domains and CI/CD pipelines through GitHub. Applied on-page SEO.",
+    "exp.freelance.tech": "Next.js · React · TypeScript · Tailwind CSS · Vercel · Git · SEO",
 
     "skills.title": "Tech Stack",
     "skills.subtitle": "Tools & technologies I work with",
@@ -97,6 +128,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
   th: {
     "nav.about": "เกี่ยวกับ",
+    "nav.experience": "ประสบการณ์",
     "nav.skills": "ทักษะ",
     "nav.projects": "ผลงาน",
     "nav.contact": "ติดต่อ",
@@ -127,6 +159,36 @@ const translations: Record<Lang, Record<string, string>> = {
     "about.edu.school": "มหาวิทยาลัยราชภัฏบุรีรัมย์",
     "about.exp.role": "Software Engineer",
     "about.exp.company": "Memsg",
+
+    "exp.title": "ประสบการณ์การทำงาน",
+    "exp.subtitle": "เส้นทางอาชีพ",
+    "exp.current": "ปัจจุบัน",
+
+    "exp.memsg.role": "Frontend Developer",
+    "exp.memsg.company": "Memsg · บุรีรัมย์ · งานประจำ",
+    "exp.memsg.period": "พ.ค. 2568 – ปัจจุบัน",
+    "exp.memsg.location": "On-site · บุรีรัมย์, ไทย",
+    "exp.memsg.d1": "พัฒนา UI Components ฝั่ง Frontend ด้วย Nuxt.js, TypeScript และ Tailwind CSS สำหรับ Responsive Design",
+    "exp.memsg.d2": "ร่วมงานกับ Designer ผ่าน Figma แปลง UI/UX Design ให้เป็น Component ที่ Pixel-Perfect",
+    "exp.memsg.d3": "นำ AI Tools มาใช้เร่ง Workflow การพัฒนาเพื่อลดเวลา Delivery",
+    "exp.memsg.tech": "Nuxt.js · TypeScript · Tailwind CSS · REST API · Git",
+
+    "exp.mango.role": "Software Development Intern",
+    "exp.mango.company": "บริษัท Mango Consultant จำกัด · กรุงเทพฯ",
+    "exp.mango.period": "พ.ย. 2567 – ก.พ. 2568 · 4 เดือน",
+    "exp.mango.location": "On-site · กรุงเทพฯ, ไทย",
+    "exp.mango.d1": "ร่วมพัฒนาและดูแลฟีเจอร์ของระบบ ERP สำหรับลูกค้าธุรกิจก่อสร้างและอสังหาริมทรัพย์",
+    "exp.mango.d2": "ฝึกฝน Version Control ด้วย Git และ GitHub — Branching, Pull Request และ Code Review",
+    "exp.mango.d3": "ร่วมงานกับ Senior Developer ด้าน Software Architecture และ ERP Best Practices ในสภาพแวดล้อม Agile",
+
+    "exp.freelance.role": "Freelance Web Developer",
+    "exp.freelance.company": "WEB BY YOU · รับงานอิสระ",
+    "exp.freelance.period": "ม.ค. 2567 – ปัจจุบัน",
+    "exp.freelance.location": "Remote · ไทย",
+    "exp.freelance.d1": "ออกแบบและส่งมอบโปรเจกต์จริง 7+ รายการ ทั้ง E-commerce, เว็บหลายภาษา และ Landing Page ธุรกิจ",
+    "exp.freelance.d2": "พัฒนาระบบใบแจ้งหนี้และจัดการสต็อกสินค้าแบบ Full-Stack พร้อมออก PDF สำหรับ SME ไทย",
+    "exp.freelance.d3": "Deploy ทุกโปรเจกต์ผ่าน Vercel พร้อม Custom Domain และ CI/CD ผ่าน GitHub รวมถึงทำ On-page SEO",
+    "exp.freelance.tech": "Next.js · React · TypeScript · Tailwind CSS · Vercel · Git · SEO",
 
     "skills.title": "เทคโนโลยีที่ใช้",
     "skills.subtitle": "เครื่องมือและเทคโนโลยีที่ผมทำงานด้วย",
