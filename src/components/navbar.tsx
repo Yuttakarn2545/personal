@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useLang } from "@/contexts/lang-context";
 import { cn } from "@/lib/utils";
 
-const navLinks = ["about", "skills", "projects", "contact"] as const;
+const navLinks = ["about", "experience", "skills", "projects", "contact"] as const;
 
 function LogoMark() {
   return (
