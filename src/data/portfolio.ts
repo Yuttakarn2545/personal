@@ -14,6 +14,15 @@ export interface Project {
   deploy: string[];
 }
 
+export interface GameProject {
+  id: string;
+  nameKey: string;
+  descKey: string;
+  tags: string[];
+  status: "Prototype" | "WIP" | "Concept";
+  accentClass: string;
+}
+
 export interface Skill {
   name: string;
   iconUrl?: string;
@@ -118,6 +127,33 @@ export const projects: Project[] = [
     backend: [],
     api: [],
     deploy: ["Vercel"],
+  },
+];
+
+export const gameProjects: GameProject[] = [
+  {
+    id: "ue5-open-world",
+    nameKey: "game.openworld.name",
+    descKey: "game.openworld.desc",
+    tags: ["Unreal Engine 5", "Nanite", "Lumen", "Landscape", "Blueprint"],
+    status: "Prototype",
+    accentClass: "bg-gradient-to-r from-emerald-500/80 to-teal-500/80",
+  },
+  {
+    id: "blender-char",
+    nameKey: "game.blenderchar.name",
+    descKey: "game.blenderchar.desc",
+    tags: ["Blender", "Rigging", "Animation", "UE5 Import", "Skeletal Mesh"],
+    status: "WIP",
+    accentClass: "bg-gradient-to-r from-orange-500/80 to-amber-500/80",
+  },
+  {
+    id: "vfx-demo",
+    nameKey: "game.vfxdemo.name",
+    descKey: "game.vfxdemo.desc",
+    tags: ["Niagara", "VFX", "Shaders", "HLSL", "UE5"],
+    status: "Concept",
+    accentClass: "bg-gradient-to-r from-violet-500/80 to-purple-500/80",
   },
 ];
 
