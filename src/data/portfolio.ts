@@ -128,6 +128,20 @@ export const projects: Project[] = [
     api: [],
     deploy: ["Vercel"],
   },
+  {
+    id: "noob-studio",
+    nameKey: "proj.noobstudio.name",
+    descKey: "proj.noobstudio.desc",
+    type: "landing",
+    isLive: true,
+    isPrivate: false,
+    liveUrl: "https://noob-studio.vercel.app",
+    screenshotUrl: mshot("https://noob-studio.vercel.app"),
+    frontend: ["Next.js", "TailwindCSS", "TypeScript"],
+    backend: [],
+    api: [],
+    deploy: ["Vercel"],
+  },
 ];
 
 export const gameProjects: GameProject[] = [
