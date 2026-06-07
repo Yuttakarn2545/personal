@@ -142,6 +142,20 @@ export const projects: Project[] = [
     api: [],
     deploy: ["Vercel"],
   },
+  {
+    id: "mala-delivery",
+    nameKey: "proj.mala.name",
+    descKey: "proj.mala.desc",
+    type: "landing",
+    isLive: true,
+    isPrivate: false,
+    liveUrl: "https://mala-delivery.vercel.app",
+    screenshotUrl: mshot("https://mala-delivery.vercel.app"),
+    frontend: ["Next.js", "TailwindCSS", "TypeScript"],
+    backend: [],
+    api: [],
+    deploy: ["Vercel"],
+  },
 ];
 
 export const gameProjects: GameProject[] = [

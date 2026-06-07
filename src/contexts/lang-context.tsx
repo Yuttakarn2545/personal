@@ -117,6 +117,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "proj.noobstudio.name": "Noob Studio",
     "proj.noobstudio.desc":
       "Creative studio landing page for Noob Studio — modern dark-themed design showcasing the brand identity and services.",
+    "proj.mala.name": "Mala Delivery",
+    "proj.mala.desc":
+      "Delivery service landing page for Mala — modern design showcasing services and ordering flow.",
 
     "games.badge": "Hobby · Game Dev",
     "games.title": "Game Dev Lab",
@@ -261,6 +264,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "proj.noobstudio.name": "Noob Studio",
     "proj.noobstudio.desc":
       "Landing page สำหรับ Noob Studio — ดีไซน์ dark theme สมัยใหม่ แสดง Brand Identity และบริการของสตูดิโอ",
+    "proj.mala.name": "Mala Delivery",
+    "proj.mala.desc":
+      "Landing page สำหรับบริการ Mala Delivery — แสดงบริการและขั้นตอนการสั่งซื้อ",
 
     "games.badge": "งานอดิเรก · Game Dev",
     "games.title": "ห้องแล็บเกม",
