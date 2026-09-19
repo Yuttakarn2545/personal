@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Github, Copy, Check, Linkedin, Phone } from "lucide-react";
+import { Mail, Github, Copy, Check, Linkedin, Phone, Globe } from "lucide-react";
 import { useLang } from "@/contexts/lang-context";
 import { Button } from "@/components/ui/button";
 
@@ -110,7 +110,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-violet-300 transition-colors"
         >
-          <Github className="w-3 h-3" />
+          <Globe className="w-3 h-3" />
           webbyyu.net
         </a>
       </div>
