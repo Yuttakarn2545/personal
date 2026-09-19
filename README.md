@@ -4,6 +4,8 @@ Software Engineer / Full-Stack Developer building production web applications an
 
 This repository contains the source for my portfolio website and acts as an index to selected engineering work.
 
+> For a deeper recruiter-facing overview, see [Engineering Case Studies](docs/engineering-case-studies.md).
+
 ## Focus
 
 - Production full-stack web development
