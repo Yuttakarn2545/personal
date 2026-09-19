@@ -196,20 +196,10 @@ const SHADCN_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg
 // Framer Motion — official F chevron mark
 const FRAMER_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23ec4899' fill-opacity='0.15'/%3E%3Cpath d='M10 8 H30 V20 H20 L30 32 H20 L10 20 V8 Z' fill='%23ec4899'/%3E%3C/svg%3E`;
 
-// Claude AI — Anthropic orange, triangle with crossbar (like the actual logo)
-const CLAUDE_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23d97757' fill-opacity='0.18'/%3E%3Cpolygon points='20,8 30,29 10,29' fill='none' stroke='%23d97757' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cline x1='14.5' y1='23' x2='25.5' y2='23' stroke='%23d97757' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E`;
 
-// ChatGPT — OpenAI green hexagon star
-const CHATGPT_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%2310a37f' fill-opacity='0.18'/%3E%3Cpath d='M20 9 L23.5 16.5 L31.5 14 L27 21 L31.5 28 L23.5 25.5 L20 33 L16.5 25.5 L8.5 28 L13 21 L8.5 14 L16.5 16.5 Z' fill='%2310a37f' fill-opacity='0.8'/%3E%3C/svg%3E`;
 
-// GitHub Copilot — purple face icon
-const COPILOT_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23a78bfa' fill-opacity='0.18'/%3E%3Ccircle cx='20' cy='17' r='7.5' fill='none' stroke='%23a78bfa' stroke-width='2'/%3E%3Ccircle cx='17' cy='16' r='1.8' fill='%23a78bfa'/%3E%3Ccircle cx='23' cy='16' r='1.8' fill='%23a78bfa'/%3E%3Cpath d='M16 20.5 Q20 24 24 20.5' stroke='%23a78bfa' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3Cpath d='M12.5 28 C12.5 24.5 27.5 24.5 27.5 28' fill='%23a78bfa' fill-opacity='0.35' stroke='%23a78bfa' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E`;
 
-// Cursor — blue arrow cursor
-const CURSOR_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%2360a5fa' fill-opacity='0.18'/%3E%3Cpath d='M11 8 L11 30 L18 23 L22 31 L25.5 29.5 L21.5 22 L30 22 Z' fill='%2360a5fa'/%3E%3C/svg%3E`;
 
-// Prompt Engineering — terminal >_ symbol
-const PROMPT_ICON = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23f472b6' fill-opacity='0.18'/%3E%3Crect x='6' y='8' width='28' height='24' rx='4' fill='none' stroke='%23f472b6' stroke-width='1.8'/%3E%3Cpath d='M11 17 L17 21 L11 25' stroke='%23f472b6' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='19' y1='25' x2='28' y2='25' stroke='%23f472b6' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E`;
 
 export const skillGroups: SkillGroup[] = [
   {
