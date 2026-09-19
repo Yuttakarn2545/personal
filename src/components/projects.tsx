@@ -118,6 +118,13 @@ export default function Projects() {
                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
+                ) : project.githubUrl && !project.isPrivate ? (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-violet-950/30 to-card">
+                    <Github className="w-8 h-8 text-violet-300/70" />
+                    <span className="text-[10px] text-violet-300/70 font-medium tracking-widest uppercase">
+                      {t("projects.source")}
+                    </span>
+                  </div>
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-secondary to-card">
                     <Lock className="w-8 h-8 text-muted-foreground/30" />
@@ -131,6 +138,8 @@ export default function Projects() {
                 <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 px-2 py-1 rounded-full bg-background/75 backdrop-blur-sm border border-border/80 text-[10px] font-medium">
                   {project.isLive ? (
                     <><span className="live-dot" /><span className="text-emerald-300">{t("projects.live")}</span></>
+                  ) : project.githubUrl && !project.isPrivate ? (
+                    <><Github className="w-2.5 h-2.5 text-violet-300" /><span className="text-violet-300">{t("projects.source")}</span></>
                   ) : (
                     <><Lock className="w-2.5 h-2.5 text-muted-foreground/50" /><span className="text-muted-foreground/60">{t("projects.private")}</span></>
                   )}
@@ -213,7 +222,7 @@ export default function Projects() {
                     WBY Organization
                   </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Web By You — web development agency. 8+ live projects across Next.js, Nuxt.js, and React.
+                    WEB BY YOU — freelance web development portfolio with 7+ delivered client projects across full-stack apps, multilingual business sites, and e-commerce.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-1 pt-2 border-t border-border/50">
@@ -223,9 +232,9 @@ export default function Projects() {
                 </div>
                 <div className="mt-auto pt-1">
                   <Button size="sm" variant="outline" asChild className="w-full h-8 text-xs gap-1.5">
-                    <a href="https://github.com/WebByYou" target="_blank" rel="noopener noreferrer">
-                      <Github className="w-3 h-3" />
-                      View on GitHub
+                    <a href="https://www.webbyyu.net" target="_blank" rel="noopener noreferrer">
+                      <Globe className="w-3 h-3" />
+                      View Portfolio
                     </a>
                   </Button>
                 </div>
