@@ -30,16 +30,9 @@ interface TechCardProps {
   desc: string;
   iconBg: string;
   icon: React.ReactNode;
-  level: "active" | "working" | "exploring";
 }
 
-function TechCard({ name, desc, iconBg, icon, level }: TechCardProps) {
-  const levelColor = {
-    active: "text-emerald-300 border-emerald-500/30 bg-emerald-500/10",
-    working: "text-violet-300 border-violet-500/30 bg-violet-500/10",
-    exploring: "text-cyan-300 border-cyan-500/30 bg-cyan-500/10",
-  }[level];
-
+function TechCard({ name, desc, iconBg, icon }: TechCardProps) {
   return (
     <div className="glass-card rounded-xl p-4 flex items-start gap-3 hover-glow transition-all duration-300">
       <div
@@ -120,14 +113,12 @@ export default function GameShowcase() {
                     UE5
                   </span>
                 }
-                level="active"
               />
               <TechCard
                 name="AI Coding Agents & MCP"
                 desc={t("games.tech.blueprint")}
                 iconBg="bg-blue-900/40"
                 icon={<Box className="w-5 h-5 text-blue-400" />}
-                level="active"
               />
               <TechCard
                 name="Blender → Unreal Pipeline"
@@ -138,14 +129,12 @@ export default function GameShowcase() {
                     3D
                   </span>
                 }
-                level="working"
               />
               <TechCard
                 name="Verification & CI/CD"
                 desc={t("games.tech.nanite")}
                 iconBg="bg-teal-900/40"
                 icon={<Monitor className="w-5 h-5 text-teal-400" />}
-                level="working"
               />
             </div>
           </div>
