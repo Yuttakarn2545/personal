@@ -39,7 +39,7 @@ export default function Skills() {
         </div>
 
         {/* Skill groups */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
           {skillGroups.map((group) => (
             <div
               key={group.titleKey}
@@ -112,15 +112,15 @@ export default function Skills() {
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-xs text-muted-foreground">
           <span className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-violet-400" />
-            Expert
+            Primary
           </span>
           <span className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-cyan-400" />
-            Intermediate
+            Working
           </span>
           <span className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-amber-400" />
-            Learning
+            Exploring
           </span>
         </div>
       </div>
