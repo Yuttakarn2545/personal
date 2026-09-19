@@ -145,6 +145,7 @@ export default function GameShowcase() {
                 desc={t("games.tech.nanite")}
                 iconBg="bg-teal-900/40"
                 icon={<Monitor className="w-5 h-5 text-teal-400" />}
+                level="working"
               />
             </div>
           </div>
