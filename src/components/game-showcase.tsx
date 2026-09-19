@@ -53,14 +53,6 @@ function TechCard({ name, desc, iconBg, icon, level }: TechCardProps) {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-0.5 flex-wrap">
           <span className="text-sm font-semibold text-foreground">{name}</span>
-          <span
-            className={cn(
-              "text-[9px] font-bold px-1.5 py-0.5 rounded border uppercase tracking-wider",
-              levelColor
-            )}
-          >
-            {level}
-          </span>
         </div>
         <p className="text-[11px] text-muted-foreground leading-relaxed">{desc}</p>
       </div>
@@ -153,7 +145,6 @@ export default function GameShowcase() {
                 desc={t("games.tech.nanite")}
                 iconBg="bg-teal-900/40"
                 icon={<Monitor className="w-5 h-5 text-teal-400" />}
-                level="exploring"
               />
             </div>
           </div>
