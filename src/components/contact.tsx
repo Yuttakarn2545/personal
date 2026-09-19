@@ -90,7 +90,7 @@ export default function Contact() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild className="min-w-[150px]">
-            <a href="https://github.com/sudyod" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Yuttakarn2545" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4" />
               GitHub
             </a>
@@ -105,13 +105,13 @@ export default function Contact() {
 
         {/* WBY org link */}
         <a
-          href="https://github.com/webbyyou"
+          href="https://www.webbyyu.net"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-violet-300 transition-colors"
         >
           <Github className="w-3 h-3" />
-          github.com/webbyyou
+          webbyyu.net
         </a>
       </div>
     </section>
