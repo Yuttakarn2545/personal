@@ -18,7 +18,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Yuttakarn Phunkhlang · Software Engineer & Full-Stack Developer",
+  title: "Yuttakan Phunkhlang · Software Engineer & Full-Stack Developer",
   description:
     "Software engineering portfolio of Yuttakan Phunkhlang — production full-stack development with Nuxt.js, Vue.js, TypeScript, Go, Next.js, PostgreSQL, AI coding agents, MCP, and Unreal Engine 5.",
   keywords: ["Yuttakan Phunkhlang", "Software Engineer", "Full-Stack Developer", "Nuxt.js", "Vue.js", "TypeScript", "Go", "Next.js", "PostgreSQL", "AI Coding Agents", "MCP", "Unreal Engine 5", "Buriram"],
