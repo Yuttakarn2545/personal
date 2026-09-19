@@ -127,9 +127,13 @@ export default function Projects() {
                   </div>
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-secondary to-card">
-                    <Lock className="w-8 h-8 text-muted-foreground/30" />
-                    <span className="text-[10px] text-muted-foreground/40 font-medium tracking-widest uppercase">
-                      {t("projects.private")}
+                    {project.isPrivate ? (
+                      <Lock className="w-8 h-8 text-muted-foreground/30" />
+                    ) : (
+                      <Github className="w-8 h-8 text-violet-400/60" />
+                    )}
+                    <span className="text-[10px] text-muted-foreground/50 font-medium tracking-widest uppercase">
+                      {project.isPrivate ? t("projects.private") : t("projects.source")}
                     </span>
                   </div>
                 )}
@@ -188,9 +192,15 @@ export default function Projects() {
                       </Button>
                     )}
                     {project.githubUrl && (
-                      <Button size="sm" variant="outline" asChild className="h-8 w-8 p-0">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        asChild
+                        className={cn("h-8 text-xs gap-1.5", project.liveUrl ? "w-8 p-0" : "flex-1")}
+                      >
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="w-3 h-3" />
+                          {!project.liveUrl && t("projects.github")}
                         </a>
                       </Button>
                     )}
