@@ -1,6 +1,6 @@
 "use client";
 
-import { Gamepad2, Zap, Box, Monitor, Star, ExternalLink } from "lucide-react";
+import { Code2, Zap, Box, Monitor, Star, ExternalLink } from "lucide-react";
 import { useLang } from "@/contexts/lang-context";
 import { gameProjects } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
@@ -30,13 +30,13 @@ interface TechCardProps {
   desc: string;
   iconBg: string;
   icon: React.ReactNode;
-  level: "hobbyist" | "learning" | "exploring";
+  level: "active" | "working" | "exploring";
 }
 
 function TechCard({ name, desc, iconBg, icon, level }: TechCardProps) {
   const levelColor = {
-    hobbyist: "text-emerald-300 border-emerald-500/30 bg-emerald-500/10",
-    learning: "text-amber-300 border-amber-500/30 bg-amber-500/10",
+    active: "text-emerald-300 border-emerald-500/30 bg-emerald-500/10",
+    working: "text-violet-300 border-violet-500/30 bg-violet-500/10",
     exploring: "text-cyan-300 border-cyan-500/30 bg-cyan-500/10",
   }[level];
 
@@ -87,7 +87,7 @@ export default function GameShowcase() {
         {/* Header */}
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-medium mb-5">
-            <Gamepad2 className="w-3.5 h-3.5" />
+            <Code2 className="w-3.5 h-3.5" />
             {t("games.badge")}
           </div>
           <h2
@@ -120,7 +120,7 @@ export default function GameShowcase() {
             </h3>
             <div className="space-y-3">
               <TechCard
-                name="Unreal Engine 5"
+                name="Unreal Engine 5.8"
                 desc={t("games.tech.ue5")}
                 iconBg="bg-slate-700/60"
                 icon={
@@ -128,17 +128,17 @@ export default function GameShowcase() {
                     UE5
                   </span>
                 }
-                level="hobbyist"
+                level="active"
               />
               <TechCard
-                name="Blueprint Visual Scripting"
+                name="AI Coding Agents & MCP"
                 desc={t("games.tech.blueprint")}
                 iconBg="bg-blue-900/40"
                 icon={<Box className="w-5 h-5 text-blue-400" />}
-                level="hobbyist"
+                level="active"
               />
               <TechCard
-                name="Blender"
+                name="Blender → Unreal Pipeline"
                 desc={t("games.tech.blender")}
                 iconBg="bg-orange-900/40"
                 icon={
@@ -146,10 +146,10 @@ export default function GameShowcase() {
                     3D
                   </span>
                 }
-                level="learning"
+                level="working"
               />
               <TechCard
-                name="Nanite & Lumen"
+                name="Verification & CI/CD"
                 desc={t("games.tech.nanite")}
                 iconBg="bg-teal-900/40"
                 icon={<Monitor className="w-5 h-5 text-teal-400" />}
