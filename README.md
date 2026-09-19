@@ -1,5 +1,7 @@
 # Yuttakan Phunkhlang — Software Engineering Portfolio
 
+[![Portfolio CI](https://github.com/Yuttakarn2545/personal/actions/workflows/ci.yml/badge.svg)](https://github.com/Yuttakarn2545/personal/actions/workflows/ci.yml)
+
 Software Engineer / Full-Stack Developer building production web applications and developer workflows with **Nuxt.js / Vue.js, TypeScript, Go, Next.js, React, PostgreSQL, REST APIs, and AI-assisted engineering tools**.
 
 This repository contains the source for my portfolio website and acts as an index to selected engineering work.
