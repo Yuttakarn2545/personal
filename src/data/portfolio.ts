@@ -19,7 +19,7 @@ export interface GameProject {
   nameKey: string;
   descKey: string;
   tags: string[];
-  status: "Prototype" | "WIP" | "Concept";
+  status: "Private" | "Public" | "Active";
   accentClass: string;
 }
 
@@ -65,8 +65,8 @@ export const projects: Project[] = [
     type: "landing",
     isLive: true,
     isPrivate: false,
-    liveUrl: "https://matclean.webbyyou.net",
-    screenshotUrl: mshot("https://matclean.webbyyou.net"),
+    liveUrl: "https://www.matcleandrthailand.com/",
+    screenshotUrl: mshot("https://www.matcleandrthailand.com/"),
     frontend: ["Next.js", "TailwindCSS", "TypeScript", "i18n (KR/EN)"],
     backend: [],
     api: [],
@@ -163,7 +163,7 @@ export const gameProjects: GameProject[] = [
     nameKey: "game.openworld.name",
     descKey: "game.openworld.desc",
     tags: ["MCP", "React", "Fastify", "WebSocket", "PostgreSQL", "Docker"],
-    status: "WIP",
+    status: "Private",
     accentClass: "bg-gradient-to-r from-violet-500/80 to-cyan-500/80",
   },
   {
@@ -171,7 +171,7 @@ export const gameProjects: GameProject[] = [
     nameKey: "game.blenderchar.name",
     descKey: "game.blenderchar.desc",
     tags: ["Unreal Engine 5.8", "C++", "Blueprints", "Steam", "Automation"],
-    status: "WIP",
+    status: "Private",
     accentClass: "bg-gradient-to-r from-emerald-500/80 to-teal-500/80",
   },
   {
@@ -179,7 +179,7 @@ export const gameProjects: GameProject[] = [
     nameKey: "game.vfxdemo.name",
     descKey: "game.vfxdemo.desc",
     tags: ["Vue 3", "TypeScript", "Go", "Fiber", "REST API"],
-    status: "Prototype",
+    status: "Public",
     accentClass: "bg-gradient-to-r from-amber-500/80 to-orange-500/80",
   },
 ]
