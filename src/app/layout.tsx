@@ -18,11 +18,11 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Yuttakarn · Full-Stack Developer",
+  title: "Yuttakarn Phunkhlang · Software Engineer & Full-Stack Developer",
   description:
-    "Portfolio of Yuttakarn — Full-Stack Developer at WBY (Web By You). Building modern web applications with Next.js, React, and TypeScript.",
-  keywords: ["Yuttakarn", "WBY", "Web By You", "Full-Stack Developer", "Next.js", "React", "TypeScript", "Bangkok"],
-  authors: [{ name: "Yuttakarn", url: "https://github.com/sudyod" }],
+    "Software engineering portfolio of Yuttakan Phunkhlang — production full-stack development with Nuxt.js, Vue.js, TypeScript, Go, Next.js, PostgreSQL, AI coding agents, MCP, and Unreal Engine 5.",
+  keywords: ["Yuttakan Phunkhlang", "Software Engineer", "Full-Stack Developer", "Nuxt.js", "Vue.js", "TypeScript", "Go", "Next.js", "PostgreSQL", "AI Coding Agents", "MCP", "Unreal Engine 5", "Buriram"],
+  authors: [{ name: "Yuttakan Phunkhlang", url: "https://github.com/Yuttakarn2545" }],
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
