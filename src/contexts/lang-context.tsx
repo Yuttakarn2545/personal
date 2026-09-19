@@ -118,6 +118,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "proj.noobstudio.name": "Noob Studio",
     "proj.noobstudio.desc":
       "Creative studio landing page for Noob Studio — modern dark-themed design showcasing the brand identity and services.",
+    "proj.mcp.name": "MCP Verified Agent Loop",
+    "proj.mcp.desc":
+      "Public developer-tooling showcase using MCP over stdio with sandboxed repository tools, bounded writes, allowlisted verification, git diff review, human approval, audit logs, and GitHub Actions.",
     "proj.exam.name": "Exam Question Manager",
     "proj.exam.desc":
       "Public full-stack architecture sample: Vue 3 + TypeScript frontend with a Go/Fiber API, layered handler → service → repository design, pagination, validation, and structured errors.",
@@ -139,6 +142,8 @@ const translations: Record<Lang, Record<string, string>> = {
     "games.tech.blender": "Blender-to-Unreal asset workflows covering modelling, UV/materials, FBX export, LOD, collision, and import validation.",
     "games.tech.nanite": "Production-minded verification: Git workflows, CI/CD, type checking, builds, regression tests, policy checks, and explicit release gates.",
     "games.projects.title": "Selected Systems",
+    "game.mcp.name": "MCP Verified Agent Loop",
+    "game.mcp.desc": "Public TypeScript MCP agent workflow with sandboxed tools, path protection, allowlisted verification, git diff review, human approval, JSON audit trails, and CI.",
     "game.openworld.name": "RemoteForge",
     "game.openworld.desc": "Policy-first AI remote execution platform with a React/Vite control plane, Fastify/WebSocket relay, outbound device agent, MCP gateway, PostgreSQL, audit concepts, Docker/Caddy deployment design, and production safety gates.",
     "game.blenderchar.name": "Stranded",
@@ -266,6 +271,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "proj.noobstudio.name": "Noob Studio",
     "proj.noobstudio.desc":
       "Landing page สำหรับ Noob Studio — ดีไซน์ dark theme สมัยใหม่ แสดง Brand Identity และบริการของสตูดิโอ",
+    "proj.mcp.name": "MCP Verified Agent Loop",
+    "proj.mcp.desc":
+      "โปรเจกต์ public ด้าน AI developer tooling ใช้ MCP ผ่าน stdio พร้อม sandbox จำกัดขอบเขตไฟล์, bounded writes, verification แบบ allowlist, ตรวจ git diff, human approval, audit log และ GitHub Actions",
     "proj.exam.name": "Exam Question Manager",
     "proj.exam.desc":
       "ตัวอย่าง Full-Stack แบบ public: Frontend Vue 3 + TypeScript และ API ด้วย Go/Fiber วางโครง handler → service → repository พร้อม pagination, validation และ structured errors",
@@ -287,6 +295,8 @@ const translations: Record<Lang, Record<string, string>> = {
     "games.tech.blender": "ทำ Blender-to-Unreal asset workflow ตั้งแต่ modelling, UV/material, FBX export, LOD, collision และ import validation",
     "games.tech.nanite": "เน้น verification แบบ production: Git workflow, CI/CD, type checking, build, regression test, policy check และ release gate ที่ชัดเจน",
     "games.projects.title": "ระบบที่เลือกมาแสดง",
+    "game.mcp.name": "MCP Verified Agent Loop",
+    "game.mcp.desc": "โปรเจกต์ public ด้วย TypeScript + MCP แสดง agent workflow ที่จำกัดสิทธิ์ tool, ป้องกัน path traversal, verification แบบ allowlist, ตรวจ git diff, human approval, audit trail และ CI",
     "game.openworld.name": "RemoteForge",
     "game.openworld.desc": "แพลตฟอร์ม AI remote execution แบบ policy-first มี React/Vite control plane, Fastify/WebSocket relay, outbound device agent, MCP gateway, PostgreSQL, audit concepts, Docker/Caddy deployment design และ production safety gates",
     "game.blenderchar.name": "Stranded",
