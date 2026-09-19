@@ -92,6 +92,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "projects.private": "Private",
     "projects.view": "View Live",
     "projects.github": "GitHub",
+    "projects.source": "Public Source",
     "projects.frontend": "FE",
     "projects.backend": "BE",
     "projects.deploy": "Deploy",
@@ -117,6 +118,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "proj.noobstudio.name": "Noob Studio",
     "proj.noobstudio.desc":
       "Creative studio landing page for Noob Studio — modern dark-themed design showcasing the brand identity and services.",
+    "proj.exam.name": "Exam Question Manager",
+    "proj.exam.desc":
+      "Public full-stack architecture sample: Vue 3 + TypeScript frontend with a Go/Fiber API, layered handler → service → repository design, pagination, validation, and structured errors.",
 
     "games.badge": "Systems · AI · Game Engineering",
     "games.title": "Engineering Lab",
@@ -236,6 +240,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "projects.private": "ส่วนตัว",
     "projects.view": "เปิดเว็บ",
     "projects.github": "GitHub",
+    "projects.source": "Public Source",
     "projects.frontend": "FE",
     "projects.backend": "BE",
     "projects.deploy": "Deploy",
@@ -261,6 +266,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "proj.noobstudio.name": "Noob Studio",
     "proj.noobstudio.desc":
       "Landing page สำหรับ Noob Studio — ดีไซน์ dark theme สมัยใหม่ แสดง Brand Identity และบริการของสตูดิโอ",
+    "proj.exam.name": "Exam Question Manager",
+    "proj.exam.desc":
+      "ตัวอย่าง Full-Stack แบบ public: Frontend Vue 3 + TypeScript และ API ด้วย Go/Fiber วางโครง handler → service → repository พร้อม pagination, validation และ structured errors",
 
     "games.badge": "Systems · AI · Game Engineering",
     "games.title": "Engineering Lab",
