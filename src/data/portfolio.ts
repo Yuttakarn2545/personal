@@ -115,6 +115,19 @@ export const projects: Project[] = [
     deploy: ["Vercel"],
   },
   {
+    id: "mcp-verified-agent-loop",
+    nameKey: "proj.mcp.name",
+    descKey: "proj.mcp.desc",
+    type: "fullstack",
+    isLive: false,
+    isPrivate: false,
+    githubUrl: "https://github.com/Yuttakarn2545/mcp-verified-agent-loop",
+    frontend: ["TypeScript", "Node.js"],
+    backend: ["MCP SDK", "Zod"],
+    api: ["MCP stdio"],
+    deploy: ["GitHub Actions"],
+  },
+  {
     id: "exam-question-manager",
     nameKey: "proj.exam.name",
     descKey: "proj.exam.desc",
@@ -158,6 +171,14 @@ export const projects: Project[] = [
 ];
 
 export const gameProjects: GameProject[] = [
+  {
+    id: "mcp-verified-agent-loop",
+    nameKey: "game.mcp.name",
+    descKey: "game.mcp.desc",
+    tags: ["MCP", "TypeScript", "Node.js", "Zod", "Vitest", "GitHub Actions"],
+    status: "Public",
+    accentClass: "bg-gradient-to-r from-cyan-500/80 to-violet-500/80",
+  },
   {
     id: "remoteforge",
     nameKey: "game.openworld.name",
@@ -255,11 +276,11 @@ export const techColor: Record<string, string> = {
   React: "cyan", "Nuxt.js": "emerald", "Vue 3": "emerald", "Vue.js": "emerald",
   TypeScript: "cyan", TailwindCSS: "cyan",
   "shadcn/ui": "violet", "Framer Motion": "violet",
-  Vite: "amber", "Node.js": "emerald",
+  Vite: "amber", "Node.js": "emerald", "MCP SDK": "violet", Zod: "cyan",
   Prisma: "slate", "Prisma v7": "slate", "Prisma ORM": "slate",
   PostgreSQL: "cyan", "Neon DB": "emerald", "Neon Serverless": "emerald",
   MySQL: "amber", Go: "cyan", Fiber: "emerald", "REST API": "violet", "REST APIs": "violet",
   "Next.js API Routes": "slate", "Nuxt Server API": "emerald",
   "i18n (KR/EN)": "amber", "i18n (TH/KR/EN)": "amber",
-  Vercel: "slate",
+  Vercel: "slate", "GitHub Actions": "emerald", "MCP stdio": "violet",
 };
