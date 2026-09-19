@@ -70,7 +70,7 @@ export default function Hero() {
             {/* Social links */}
             <div className="flex flex-wrap items-center lg:justify-start justify-center gap-2">
               <a
-                href="https://github.com/sudyod"
+                href="https://github.com/Yuttakarn2545"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3 py-2 rounded-xl border border-border hover:border-violet-500/40 hover:bg-violet-500/10 text-muted-foreground hover:text-violet-300 transition-all duration-200 text-sm"
@@ -145,13 +145,13 @@ export default function Hero() {
 
             {/* Floating tech pills */}
             <div className="absolute -left-6 top-12 px-3 py-1.5 rounded-full bg-background/80 backdrop-blur-sm border border-border text-[10px] font-medium text-cyan-300 shadow-lg rotate-[-8deg]">
-              Next.js
+              Nuxt.js
             </div>
             <div className="absolute -right-4 top-20 px-3 py-1.5 rounded-full bg-background/80 backdrop-blur-sm border border-border text-[10px] font-medium text-violet-300 shadow-lg rotate-[6deg]">
-              TypeScript
+              Go
             </div>
             <div className="absolute -left-4 bottom-20 px-3 py-1.5 rounded-full bg-background/80 backdrop-blur-sm border border-border text-[10px] font-medium text-emerald-300 shadow-lg rotate-[5deg]">
-              Prisma
+              MCP
             </div>
           </div>
         </div>
